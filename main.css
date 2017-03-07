@@ -1,0 +1,27 @@
+body {
+	background: #3c3b38;
+	margin: 0;
+}
+/*Color combinations ugly, change them*/
+header{
+	height: 100px;
+	width: 100%;
+	background: #c5c2ae;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;	
+}
+
+
+div {
+	display: inline-block;
+	align-content: center;
+	height: 100px;
+	width: 15%;
+	background: #52658f;
+	text-align: center;
+	margin: 2px;
+}
+/*DIV styles to be called through js*/
+
+
