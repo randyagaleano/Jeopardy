@@ -1,7 +1,7 @@
 
 //  TOP ROW OF QUESTIONS
 var questions = [
-	{question: "Is this the first question?", answer: 'a', points: 100},
+	{question: "Is this the first question?\n\n a.) a \n b.) b", answer: 'a', points: 100},
 	{question: "QUESTION2", answer: "ANSWER", points: 100},
 	{question: "QUESTION3", answer: "ANSWER", points: 100},
 	{question: "QUESTION4", answer: "ANSWER", points: 100},
@@ -32,7 +32,10 @@ var questions = [
 	{question: "QUESTION5", answer: "ANSWER", points: 500},
 ];
 
+
 var score = 0;
+
+
 for ( i = 0; i<questions.length; i++) {
 	var tile = document.createElement('tiles');
 	tile.className = 'tiles';
@@ -49,7 +52,10 @@ for ( i = 0; i<questions.length; i++) {
 	var input = prompt(this.getAttribute("question"));
 	var answer = this.getAttribute("answer");
 	var points = this.getAttribute("points");
-	
+
+
+
+
 	if (input === answer) {
 		score += parseInt(points);
 		alert("Correct! You now have " + score + " points!")
@@ -58,16 +64,32 @@ for ( i = 0; i<questions.length; i++) {
 		score -= parseInt(points);
 		alert("Ouch! You have dropped to " + score + " points, bummer.");
 	}
+	document.getElementById('counter').innerHTML = score;
 });
+
+
+
+// Mouse over/out
+tile.addEventListener("mouseover", changeText);
+	function changeText (){
+	  this.innerHTML = "category";
+}
+
+tile.addEventListener("mouseout", revertText);
+	function revertText (){
+	  this.innerHTML = questions[i].points;
+}
+
+
+
+
+
+
+
 document.body.appendChild(tile);
+
+
 };
-
-
-
-
-
-
-
 
 
 

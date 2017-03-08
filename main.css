@@ -26,7 +26,7 @@ header{
 	text-align: center;
 	margin: 5px;
 	padding: 13px;
-	box-shadow: 10px 10px 50px black;
+	box-shadow: 10px 10px 25px black;
 	border-radius: 5px;
 	font-size: 1.25em;
 	transition: 2.5s;
@@ -40,4 +40,45 @@ header{
 	cursor: pointer;
 }
 
+
+
+
+
 /*DIV styles to be called through js*/
+
+#counter {
+	height: 20px;
+	width: 200px;
+	background: red;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+}
+
+#score {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
