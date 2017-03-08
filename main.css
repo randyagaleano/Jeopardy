@@ -1,8 +1,11 @@
 body {
 	background: #3c3b38;
 	margin: 0;
+	margin-bottom: 100px;
+	font-family: helvetica;
+	text-align: center;
 }
-/*Color combinations ugly, change them*/
+/*Color combinations are ugly, change them*/
 header{
 	height: 100px;
 	width: 100%;
@@ -13,14 +16,17 @@ header{
 }
 
 
-div {
+.tiles {
 	display: inline-block;
 	align-content: center;
+	justify-content: center;
 	height: 100px;
 	width: 15%;
 	background: #52658f;
 	text-align: center;
-	margin: 2px;
+	margin: 3px;
+	padding: 13px;
+	box-shadow: 1px 3px 5px #888888;
 }
 /*DIV styles to be called through js*/
 
