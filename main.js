@@ -56,9 +56,9 @@ for ( i = 0; i<questions.length; i++) {
 
 
   	tile.addEventListener('click', function() {
-  		this.style.backgroundColor = 'red';
+  		this.style.backgroundColor = 'black';
+  		this.style.color = 'black';
   	})
-
 
 	// function
 	tile.addEventListener ('click', function() {

@@ -56,7 +56,7 @@ header{
 	position: relative;
 	border-radius: 5px;
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	box-shadow: 10px 10px 25px black;
 	color: #c5c2ae;
 }
@@ -74,10 +74,9 @@ header{
 }
 
 #catagories span {
-	background-color: white;
-	/*height: 50px;*/
-}
-
+	color: white;
+	font-size: 2em;
+}	
 
 
 
