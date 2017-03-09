@@ -74,7 +74,7 @@ for ( i = 0; i<questions.length; i++) {
 			score -= parseInt(points);
 			alert("Ouch! You have dropped to " + score + " points, bummer.");
 		}
-	document.getElementById('counter').innerHTML = 'SCORE:' + score;
+	document.getElementById('counter').innerHTML = 'SCORE: ' + score;
 });
 
 
