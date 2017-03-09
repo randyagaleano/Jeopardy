@@ -26,7 +26,7 @@ header{
 	text-align: center;
 	margin: 5px;
 	padding: 13px;
-	box-shadow: 10px 10px 25px black;
+	box-shadow: 10px 10px 25px 15px black;
 	border-radius: 5px;
 	font-size: 1.25em;
 	transition: 2.5s;
@@ -49,17 +49,33 @@ header{
 #counter {
 	height: 20px;
 	width: 200px;
-	background: red;
+	background: rgba(100, 20, 60, 0.3);
 	display: flex;
 	align-content: center;
 	justify-content: center;
 	position: relative;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 25px black;
+	color: #c5c2ae;
 }
 
 #score {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+
+#catagories {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+#catagories span {
+	background-color: white;
+	/*height: 50px;*/
 }
 
 
