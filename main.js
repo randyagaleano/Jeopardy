@@ -54,18 +54,18 @@ for ( i = 0; i<questions.length; i++) {
 	tile.setAttribute("answer", questions[i].answer);
 	tile.setAttribute("points", questions[i].points);
 
-
+	// After click, disable
   	tile.addEventListener('click', function() {
   		this.style.backgroundColor = 'black';
   		this.style.color = 'black';
   	})
 
-	// function
+	// function to show objects of array
 	tile.addEventListener ('click', function() {
-
 	var input = prompt(this.getAttribute("question"));
 	var answer = this.getAttribute("answer");
 	var points = this.getAttribute("points");
+		// Results correct or incorrect
 		if (input === answer) {
 			score += parseInt(points);
 			alert("Correct! You now have " + score + " points!")
@@ -74,15 +74,13 @@ for ( i = 0; i<questions.length; i++) {
 			score -= parseInt(points);
 			alert("Ouch! You have dropped to " + score + " points, bummer.");
 		}
+	// Displays score
 	document.getElementById('counter').innerHTML = 'SCORE: ' + score;
 });
 
 
 
 document.body.appendChild(tile);
-// Mouse over/out
-
-
 };
 
 
