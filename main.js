@@ -55,7 +55,9 @@ for ( i = 0; i<questions.length; i++) {
 	tile.setAttribute("points", questions[i].points);
 
 
-
+  	tile.addEventListener('click', function() {
+  		this.style.backgroundColor = 'red';
+  	})
 
 
 	// function
@@ -76,13 +78,12 @@ for ( i = 0; i<questions.length; i++) {
 });
 
 
+
 document.body.appendChild(tile);
 // Mouse over/out
 
 
 };
-
-
 
 
 
