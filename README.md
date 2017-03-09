@@ -16,11 +16,14 @@ Within this for loop, I set the class of these tiles to match a style I created 
 
 DEPLOYED APP THROUGH BITBALOON 
 -----------------
+insert here
 
+Wireframe
+-----------------
+http://imgur.com/a/6nMmA
 
 TRELLO
 -----------------
-
 https://trello.com/b/WZ9OEPhW/jeopardy
 
 
@@ -33,6 +36,5 @@ HTML, CSS, JS.
 
 FUTURE DEVELOPEMENT
 -----------------
-
 MAKE THIS MULTIPLAYER
 CREATE MODALS IN PLACE OF ALERTS
