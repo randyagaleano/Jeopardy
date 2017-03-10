@@ -1,4 +1,3 @@
-
 //  TOP ROW OF QUESTIONS
 var questions = [
 
@@ -89,52 +88,3 @@ for ( i = 0; i < questions.length; i++) {
 });
 document.body.appendChild(tile);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
