@@ -38,14 +38,9 @@ var questions = [
 	{question: "This country was formerly known as British Honduras\n\n a.) What is the Guatemala \n b.) What is the Belize \n c.) What is the Honduras \n d.) What is the Peru ", answer: "b", points: 500},
 ];
 
-
-
-
-
-
 var score = 0;
 
-for ( i = 0; i<questions.length; i++) {
+for ( i = 0; i < questions.length; i++) {
 	var tile = document.createElement('tiles');
 	tile.className = 'tiles';
 	// ^^^creates; takes styles of said className
@@ -62,26 +57,42 @@ for ( i = 0; i<questions.length; i++) {
 
 	// function to show objects of array
 	tile.addEventListener ('click', function() {
-	var input = prompt(this.getAttribute("question"));
-	var answer = this.getAttribute("answer");
-	var points = this.getAttribute("points");
-		// Results correct or incorrect
-		if (input === answer) {
-			score += parseInt(points);
-			alert("Correct! You now have " + score + " points!")
-		}
-		else {
-			score -= parseInt(points);
-			alert("Ouch! You have dropped to " + score + " points, bummer.");
-		}
-	// Displays score
-	document.getElementById('counter').innerHTML = 'SCORE: ' + score;
+
+
+	if ( !$(this).hasClass('clicked') ) {
+	// ^Adds class at the end
+		var input = prompt(this.getAttribute("question"));
+		// Accepts capital case answers by converting to lower case
+		var anyInput = input.toLowerCase();
+		var answer = this.getAttribute("answer");
+		var points = this.getAttribute("points");
+			// Results correct or incorrect
+			if (anyInput === answer) {
+				score += parseInt(points);
+				alert("Correct! You now have " + score + " points!")
+			}
+			else {
+				score -= parseInt(points);
+				alert("Ouch! You have dropped to " + score + " points, bummer. The correct answer was " + answer+"!")
+			}
+		// Displays score
+		document.getElementById('counter').innerHTML = 'SCORE: ' + score;
+		$(this).addClass('clicked');
+		$(this).css('box-shadow:hover', '10px 10px 25px black');
+	}
+
+
+
 });
+
+
+
 
 
 
 document.body.appendChild(tile);
 };
+
 
 
 

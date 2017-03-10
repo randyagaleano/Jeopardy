@@ -5,7 +5,7 @@ body {
 	font-family: helvetica;
 	text-align: center;
 }
-/*Color combinations are ugly, change them*/
+
 header{
 	height: 200px;
 	width: 100%;
@@ -15,7 +15,6 @@ header{
 	margin-bottom: 50px;	
 	margin-top: 20px;
 }
-
 
 .tiles {
 	display: inline-block;
@@ -42,40 +41,12 @@ header{
 	cursor: pointer;
 }
 
-
-
-
-
-/*DIV styles to be called through js*/
-
-#counter {
-	height: 20px;
-	width: 250px;
-	background: rgba(163, 156, 162, 0.01);
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	position: relative;
-	border-radius: 5px;
-	padding: 30px;
-	margin-bottom: 50px;
-	box-shadow: 10px 10px 25px black;
-	color: white;
-	font-size: 2em;
-	font-weight: bold;
-}
-
-#score {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
-
 #catagories {
 	display: flex;
 	justify-content: space-around;
 	align-content: center;
-	margin: 20px 10px;
+	margin: 20px 40px;
+	padding-bottom: 40px;
 }
 
 #catagories span {
@@ -85,13 +56,60 @@ header{
 
 
 
+/*DIV styles to be called through js*/
+
+#counter {
+	border: 5px solid black;
+	height: 20px;
+	width: 250px;
+	background: #313131;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	border-radius: 5px;
+	padding: 30px;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	box-shadow: 10px 10px 25px black;
+	color: white;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#score {
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.clicked:hover {
+/*	background-color: white;
+	box-shadow: 10px 10px 25px black;*/
+	cursor: default;
+	display: inline-block;
+	align-content: center;
+	justify-content: center;
+	height: 100px;
+	width: 15%;
+	background: #6786ca;
+	text-align: center;
+	margin: 5px;
+	padding: 13px;
+	box-shadow: 10px 10px 25px 15px black;
+	border-radius: 5px;
+	font-size: 1.25em;
+	font-weight: bold;
+	transition: 2.5s;
+
+}
 
 
 
-
-
-
-
+style modal to liking
+modal position fixed
+display none
 
 
 

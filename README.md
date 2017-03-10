@@ -14,24 +14,30 @@ I made an array full of objects that would be the content inside the prompt by r
 Within this for loop, I set the class of these tiles to match a style I created in my css file.
 
 
+
 DEPLOYED APP THROUGH BITBALOON 
 -----------------
-insert here
+http://jeopardy-rg.bitballoon.com/
+
+
 
 Wireframe
 -----------------
 http://imgur.com/a/6nMmA
+
+
 
 TRELLO
 -----------------
 https://trello.com/b/WZ9OEPhW/jeopardy
 
 
+
 TECHNOLOGIES USED
 -----------------
-
 I attached jquery in order to convert over from my javascript(in progress).
 HTML, CSS, JS.
+
 
 
 FUTURE DEVELOPEMENT
