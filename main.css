@@ -54,12 +54,10 @@ header{
 	font-size: 2em;
 }	
 
-
-
 /*DIV styles to be called through js*/
 
 #counter {
-	border: 5px solid black;
+	border: 4px solid black;
 	height: 20px;
 	width: 250px;
 	background: #313131;
@@ -71,7 +69,7 @@ header{
 	padding: 30px;
 	padding-bottom: 50px;
 	margin-bottom: 50px;
-	box-shadow: 10px 10px 25px black;
+	box-shadow: 10px 10px 25px 5px black;
 	color: white;
 	font-size: 2em;
 	font-weight: bold;
@@ -85,7 +83,6 @@ header{
 }
 
 .clicked:hover {
-
 	cursor: default;
 	display: inline-block;
 	align-content: center;
@@ -101,12 +98,16 @@ header{
 	font-size: 1.25em;
 	font-weight: bold;
 	transition: 2.5s;
-
 }
 
-
-#mymodal {
-	display: none;
+.modal {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: fixed;
+	background-color: white;
+	width: 400px;
+	height: 400px;	
 }
 
 

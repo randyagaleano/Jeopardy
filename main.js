@@ -78,9 +78,7 @@ for ( i = 0; i < questions.length; i++) {
 			}
 		// Displays score
 		document.getElementById('counter').innerHTML = 'SCORE: ' + score;
-
 		$(this).addClass('clicked');
-
 		$(this).css('color', '#c5c2ae');
 		$(this).css('font-weight', '200');
 		$(this).css('box-shadow:hover', '10px 10px 25px black');
@@ -89,12 +87,6 @@ for ( i = 0; i < questions.length; i++) {
 
 
 });
-
-
-
-
-
-
 document.body.appendChild(tile);
 };
 
