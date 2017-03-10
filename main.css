@@ -85,15 +85,14 @@ header{
 }
 
 .clicked:hover {
-/*	background-color: white;
-	box-shadow: 10px 10px 25px black;*/
+
 	cursor: default;
 	display: inline-block;
 	align-content: center;
 	justify-content: center;
 	height: 100px;
 	width: 15%;
-	background: #6786ca;
+	background: white;
 	text-align: center;
 	margin: 5px;
 	padding: 13px;
@@ -106,13 +105,9 @@ header{
 }
 
 
-
-style modal to liking
-modal position fixed
-display none
-
-
-
+#mymodal {
+	display: none;
+}
 
 
 

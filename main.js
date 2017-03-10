@@ -59,6 +59,7 @@ for ( i = 0; i < questions.length; i++) {
 	tile.addEventListener ('click', function() {
 
 
+
 	if ( !$(this).hasClass('clicked') ) {
 	// ^Adds class at the end
 		var input = prompt(this.getAttribute("question"));
@@ -77,7 +78,11 @@ for ( i = 0; i < questions.length; i++) {
 			}
 		// Displays score
 		document.getElementById('counter').innerHTML = 'SCORE: ' + score;
+
 		$(this).addClass('clicked');
+
+		$(this).css('color', '#c5c2ae');
+		$(this).css('font-weight', '200');
 		$(this).css('box-shadow:hover', '10px 10px 25px black');
 	}
 
