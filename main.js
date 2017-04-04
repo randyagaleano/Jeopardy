@@ -54,10 +54,10 @@ for ( i = 0; i < questions.length; i++) {
   		this.style.color = 'black';
   	})
 
+
+
 	// function to show objects of array
 	tile.addEventListener ('click', function() {
-
-
 
 	if ( !$(this).hasClass('clicked') ) {
 	// ^Adds class at the end
